@@ -49,10 +49,48 @@ const users = [
 ]
 
 users[1].email
-console.log(TwitterUser);
+// console.log(TwitterUser);
 
-console.log(Object.keys(TwitterUser));
-console.log(Object.values(TwitterUser));
-console.log(Object.entries(TwitterUser));
+// console.log(Object.keys(TwitterUser));
+// console.log(Object.values(TwitterUser));
+// console.log(Object.entries(TwitterUser));
 
-console.log(TwitterUser.hasOwnProperty('isLoggedIn'));
+// console.log(TwitterUser.hasOwnProperty('isLoggedIn'));
+
+
+
+const course = {
+    coursename: "JS in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+
+
+// ex of destructuring
+// const navbar = ({company}) => {
+
+// }
+
+// navbar(company = "vishal")
+
+
+
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
