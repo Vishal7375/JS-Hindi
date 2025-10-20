@@ -31,11 +31,41 @@ const result = addTwoNumbers(3, 5)
 function loginUserMessage(username) {
     // if (username === undefined) {
     if (!username) {
-        console.log("Please enter a username");
+        // console.log("Please enter a username");
         return
     }
     return `${username} just logged in`
 }
 
 // console.log(loginUserMessage("Vishal"))
-console.log(loginUserMessage())
+// console.log(loginUserMessage())
+
+
+function calculateCartPrice(...num1) {
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 400, 500));
+
+const cource = {
+    courcename: "javascript",
+    price: 199
+}
+
+function handleObject(anyobject) {
+    console.log(`Courcename is ${anyobject.courcename} and price is ${anyobject.price}`);
+}
+
+// handleObject(cource)
+// handleObject({
+//     courcename: "typescript",
+//     price: 399
+// })
+
+const myNewArray = [200, 400, 500, 600]
+
+function returnSecondValue(getArray) {
+    return getArray[1]
+}
+
+console.log(returnSecondValue([200, 400, 500, 600]));
